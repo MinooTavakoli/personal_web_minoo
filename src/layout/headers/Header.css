@@ -1,0 +1,168 @@
+.sidebar-header-wrapper {
+  /* width: 60px;
+  height: 440px; */
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: #323232;
+  padding: 10px 0;
+}
+
+ul li a .link {
+  padding: 8px;
+}
+
+.person-icon {
+  width: 25px;
+  padding: 4px 0;
+}
+
+ul li a {
+  position: relative;
+  transition: 0.2s;
+}
+
+ul li a:hover {
+  transform: scale(1.08);
+  transition: 0.2s;
+  filter: invert(55%) sepia(90%) saturate(2878%) hue-rotate(180deg)
+    brightness(74%) contrast(60%);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: -moz-radial-gradient(
+    right,
+    ellipse cover,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: -webkit-radial-gradient(
+    right,
+    ellipse cover,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: radial-gradient(
+    ellipse at right,
+    rgba(197, 202, 213, 0.7) 0,
+    rgba(255, 255, 255, 0) 90%
+  );
+}
+
+@media screen and (max-width: 786px) {
+  .custom-responsive-head {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 0;
+  }
+  .custom-ul-head-responsive {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    direction: ltr;
+  }
+  .person-icon {
+    width: 18px;
+  }
+  ul li a {
+    padding: 0;
+  }
+
+  ul li a .link {
+    padding: 4px 8px;
+  }
+
+  ul li a:before {
+    display: none;
+  }
+  .custom-ul-head-responsive:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: auto;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(
+      left,
+      ellipse cover,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -webkit-radial-gradient(
+      left,
+      ellipse cover,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at left,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+    z-index: 2;
+  }
+
+  .link-custom:before {
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(
+      top,
+      ellipse cover,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -webkit-radial-gradient(
+      top,
+      ellipse cover,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at top,
+      #ddd 0,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
+
+  .minoo-tavakoli-name {
+    display: flex;
+    padding: 0px 0 10px 24px;
+  }
+  .custom-responsive-head {
+    position: fixed;
+    height: auto;
+    z-index: 1055;
+    top: 0px;
+    background: #fff;
+    box-shadow: 0 0 8px rgb(70 57 57 / 70%);
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .minoo-tavakoli-name {
+    display: none;
+  }
+}
