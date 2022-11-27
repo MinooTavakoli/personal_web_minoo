@@ -31,7 +31,7 @@ function Profile() {
                   <div className="title-name">Minoo Tavakoli</div>
                   <div className="title-job">Front End Developer</div>
                   <div dir="ltr" className="profile-info-description">
-                    Mid Level React Developer <br />ّ
+                    React Developer <br />ّ
                   </div>
                   <div className="social-icon-wrapper">
                     <a
